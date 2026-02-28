@@ -25,11 +25,11 @@ This commit introduces:
 
 ## Primary Review Cues (Fast Skim)
 
-Please review the implementation commit directly:
+Please review commit:
 
-- Commit: https://github.com/louspringer/Beast-mode-Ontology/commit/06576615c556265111c69915e5a530e173603c15
+`06576615c556265111c69915e5a530e173603c15`
 
-This provides stable access to:
+This commit contains:
 
 - Trust extension ontology file
 - Example TTL
@@ -44,15 +44,11 @@ Primary commit implementing this work:
 
 ## Traceability Map
 
-## Traceability Map
-
-| Concept                    | Commit   |
-|----------------------------|----------|
-| Trust extension module     | 0657661  |
-| Trust property semantics   | 0657661  |
-| SHACL validation structure | 0657661  |
-| Example usage              | 0657661  |
-
-This document links the conceptual Issue directly to its immutable implementation commit.
+| Concept                    | Commit                                       |
+|----------------------------|----------------------------------------------|
+| Trust extension module     | 06576615c556265111c69915e5a530e173603c15     |
+| Trust property semantics   | 06576615c556265111c69915e5a530e173603c15     |
+| SHACL validation structure | 06576615c556265111c69915e5a530e173603c15     |
+| Example usage              | 06576615c556265111c69915e5a530e173603c15     |
 
 This document links the conceptual Issue directly to its immutable implementation commit.
