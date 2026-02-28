@@ -14,7 +14,7 @@ The referenced implementation introduces:
 
 - Bow-tie messaging constructs for structured message flow modeling
 - Network module additions aligned with messaging semantics
-- Enrichment and alignment with beast-mailbox-core concepts
+- Enrichment and alignment with mailbox-core concepts
 
 This PR adds traceability documentation only and does not modify ontology logic.
 
@@ -24,8 +24,16 @@ Please review:
 
 - `ontologies/modules/messaging/beast_messaging_core.ttl`
 - `ontologies/modules/network/beast_network_core.ttl`
-- Related messaging/network SHACL constructs
-- Alignment with mailbox-core semantics
+- `ontologies/modules/messaging/beast_a2a_shapes.ttl`
+- `ontologies/modules/messaging/beast_mailbox_impl.ttl`
+- `ontologies/alignments/beast_mailbox_alignment.ttl`
+
+Focus on:
+
+- Bow-tie messaging structure
+- Network module relationships
+- SHACL validation shapes related to messaging
+- Mailbox-core semantic alignment
 
 ## Implementation Anchor
 
@@ -36,10 +44,12 @@ Primary commit implementing this work:
 
 ## Traceability Map
 
-| Concept                          | Commit   | Files |
-|----------------------------------|----------|-------|
-| Bow-tie messaging constructs     | 3a3d398  | ontologies/modules/messaging/beast_messaging_core.ttl |
-| Network module additions         | 3a3d398  | ontologies/modules/network/beast_network_core.ttl |
-| Mailbox-core semantic alignment  | 3a3d398  | ontologies/modules/messaging/beast_messaging_core.ttl |
+| Concept                             | Commit   | Files |
+|-------------------------------------|----------|-------|
+| Bow-tie messaging constructs        | 3a3d398  | ontologies/modules/messaging/beast_messaging_core.ttl |
+| Network module additions            | 3a3d398  | ontologies/modules/network/beast_network_core.ttl |
+| Messaging SHACL validation shapes   | 3a3d398  | ontologies/modules/messaging/beast_a2a_shapes.ttl |
+| Mailbox implementation alignment    | 3a3d398  | ontologies/modules/messaging/beast_mailbox_impl.ttl |
+| Mailbox semantic alignment mapping  | 3a3d398  | ontologies/alignments/beast_mailbox_alignment.ttl |
 
 This document links the conceptual Issue to its specific implementation commit and associated ontology modules.
