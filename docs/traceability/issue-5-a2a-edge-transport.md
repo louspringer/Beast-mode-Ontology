@@ -1,35 +1,52 @@
-# Issue #5: A2A edge transport + AgentCard projection
+# Issue #5: A2A edge transport + AgentCard
 
 ## Intent
-Introduce an A2A (agent-to-agent) edge transport channel and AgentCard projection model to support interoperability and semantic discovery, with SHACL validation for “A2A readiness”.
+
+Add an interoperability transport (A2A channel) alongside existing messaging, and introduce an AgentCard-style projection for semantic discovery/matching, with SHACL validation of A2A readiness.
 
 ## Context
-The ecosystem needed a way to represent agents that can be discovered and interacted with externally (beyond internal messaging such as Redis Streams). This work adds an interoperability transport abstraction and a semantic “AgentCard” style projection for discovery/matching.
+
+As Beast Mode expands into multi-agent interoperability, agents need a standard way to advertise endpoints/identity and validate “ready-to-talk” constraints. This work adds an A2A transport abstraction and a discovery projection model aligned with that goal.
 
 ## What Changed (Implementation Summary)
-- Added A2A interoperability transport modeling:
-  - beast:A2AChannel
-- Added discovery/matching modeling constructs:
-  - beast:AgentCardProjection
-  - beast:A2ASkill
-- Added SHACL shapes to validate A2A readiness (e.g., endpointUrl / agentCardUrl / identity fields as applicable)
-- Added an example agent exposed via A2A
+
+Implemented in commit:
+
+`fb7717d7ac3da3c035623f7f133e2ac8b2d680d6`
+
+This commit introduces:
+
+- A2A transport channel modeling (`beast:A2AChannel`)
+- AgentCard projection and A2A skill constructs for discovery/matching
+- SHACL shapes validating A2A readiness (e.g., endpoint URL, agent card URL, identity fields)
+- Example agent exposed via A2A
 
 ## Primary Review Cues (Fast Skim)
-Please focus on:
-- Ontology module(s) defining:
-  - A2A transport channel (beast:A2AChannel)
-  - AgentCard projection and skills (beast:AgentCardProjection, beast:A2ASkill)
-- SHACL shapes validating required A2A fields
-- Example TTL demonstrating an A2A-exposed agent
+
+Please review commit:
+
+`fb7717d7ac3da3c035623f7f133e2ac8b2d680d6`
+
+Focus areas:
+
+- Ontology additions for A2A transport + AgentCard projection
+- SHACL validation shapes for required fields
+- Example TTL demonstrating the A2A surface
 
 ## Implementation Anchor
+
 Primary commit implementing this work:
 
-- fb7717d  
-  "Add A2A edge transport channel + AgentCard projection + SHACL"
+- fb7717d7ac3da3c035623f7f133e2ac8b2d680d6  
+  "Title: Add A2A edge transport channel + AgentCard projection + SHACL"
 
 ## Traceability Map
-Issue → Concept → Commit → Files
 
-This document exists to make review fast and to map Issue #5 to its implementation anchor.
+| Concept                          | Commit                                       |
+|----------------------------------|----------------------------------------------|
+| A2A transport channel model      | fb7717d7ac3da3c035623f7f133e2ac8b2d680d6     |
+| AgentCard projection + A2A skill | fb7717d7ac3da3c035623f7f133e2ac8b2d680d6     |
+| SHACL A2A readiness validation   | fb7717d7ac3da3c035623f7f133e2ac8b2d680d6     |
+| Example A2A agent                | fb7717d7ac3da3c035623f7f133e2ac8b2d680d6     |
+
+This document links the conceptual Issue directly to its immutable implementation commit.
