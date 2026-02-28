@@ -49,13 +49,13 @@ Primary commit implementing this work:
 
 ## Traceability Map
 
-| Concept                                        | Commit   | Files |
-|------------------------------------------------|----------|-------|
-| Bow-tie messaging constructs                  | 3a3d398  | ontologies/modules/messaging/beast_messaging_core.ttl |
-| Network module additions                      | 3a3d398  | ontologies/modules/network/beast_network_core.ttl |
-| A2A channel + AgentCard implementation        | 3a3d398  | ontologies/modules/messaging/beast_a2a_channel_impl.ttl |
-| Messaging SHACL validation shapes             | 3a3d398  | ontologies/modules/messaging/beast_a2a_shapes.ttl |
-| Mailbox implementation alignment constructs   | 3a3d398  | ontologies/modules/messaging/beast_mailbox_impl.ttl |
-| Mailbox semantic alignment scaffolding (WIP)  | 3a3d398  | ontologies/alignments/beast_mailbox_alignment.ttl |
+| Concept | Commit | Files |
+|---|---|---|
+| Bow-tie messaging constructs | 3a3d398 | ontologies/modules/messaging/beast_messaging_core.ttl |
+| Network module additions | 3a3d398 | ontologies/modules/network/beast_network_core.ttl |
+| A2A channel + AgentCard implementation | 3a3d398 | ontologies/modules/messaging/beast_a2a_channel_impl.ttl |
+| Messaging SHACL validation shapes | 3a3d398 | ontologies/modules/messaging/beast_a2a_shapes.ttl |
+| Mailbox implementation alignment constructs | 3a3d398 | ontologies/modules/messaging/beast_mailbox_impl.ttl |
+| Mailbox semantic alignment scaffolding (WIP) | 3a3d398 | ontologies/alignments/beast_mailbox_alignment.ttl |
 
 This document links the conceptual Issue to its specific implementation commit and associated ontology modules.
